@@ -1,4 +1,5 @@
 import 'calculate_marksheet.dart';
+import 'data.dart';
 import 'student_data.dart';
 
 void main() {
@@ -13,6 +14,8 @@ void main() {
   // studentDataPrint1("Ali");
   studentMarksheet3(num1: 88, name: "abc");
   studentMarksheet4(name: "ali", num1: 45);
+  studentDataPrint(null, 34);
+  books.add({});
 }
 
 //  required named parameter
@@ -40,7 +43,7 @@ int calculateTotalMark(int num1, int num2, int num3) {
 }
 //  Positional Optional parameter
 
-void studentDataPrint([String? StdName, int? age]) {
+void studentDataPrint([String? StdName = "sa", int? age]) {
   print(StdName);
   print(age);
 } //  Positional Optional parameter with default value

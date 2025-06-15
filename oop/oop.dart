@@ -10,19 +10,57 @@
 
 void main() {
   // Object | Instance
-  MyClass class1 = MyClass();
-  class1.num1 = 20;
-  class1.printMyName("name");
-  MyClass class2 = MyClass();
-  print(class2.num1);
+  // Person class1 = Person();
+  // class1.printMyName("Abdullah");
+  // class1.printMyName("Owais");
+
+  // Person class2 = Person();
+  // class2.printMyName("Shahzeb");
+  // class2.printMyName("ABdullah");
+
+  // Person person1 = Person('Owais', 24);
+  // person1.walking();
+  // person1.talking();
+  // Person person2 = Person('Ahmed', 26);
+  // person2.walking();
+  // person2.talking();
+
+  // abc();
 }
 
-class MyClass {
+class Person {
   //  attributes | Properties
-  int num1 = 10;
+  String? name;
+  int? age;
 
-// methods | Behavior
+  // Constructor => Default Constructor
+  // Person(name, age) {
+  //   print(name);
+  //   print(age);
+  //   this.name = name;
+  // }
+  Person({required this.name, required this.age});
+  // methods | Behavior
+  walking() {
+    print("$name is walking");
+  }
+
+  talking() {
+    print("$name is talking");
+  }
+
   void printMyName(name) {
+    // this.name = name;
     print(name);
   }
 }
+
+// abc() {
+//   var name = 'owais';
+//   printMyName() {
+//     var name = 'ahmed';
+//     print(name);
+//   }
+
+//   printMyName();
+// }
